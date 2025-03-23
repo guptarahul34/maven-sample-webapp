@@ -26,7 +26,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('sonarqube-server') {
-                    sh "${scannerHome}/bin/sonar-scanner -Dsonar.scanner.useSystemTrustStore=true"
+                    sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
         }
