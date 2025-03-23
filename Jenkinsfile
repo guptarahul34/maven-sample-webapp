@@ -44,7 +44,7 @@ pipeline {
                           "files": [
                             {
                               "pattern": "target/*.war",
-                              "target": "devops-learning-libs-release-local/{1}",
+                              "target": "devops-learning-libs-release-local/",
                               "flat": "false",
                               "props": "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
