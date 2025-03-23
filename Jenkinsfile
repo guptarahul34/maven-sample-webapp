@@ -26,7 +26,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('sonarqube-server') {
-                    sh "${scannerHome}/bin/sonar-scanner"
+                    sh "${scannerHome}/bin/sonar-scanner sonar.scanner.skipSystemTruststore=true"
                 }
             }
         }
